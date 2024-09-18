@@ -1,4 +1,4 @@
-<h3>A Simple and Intuitive Weather Application</h3>h3><br>
+<h3>A Simple and Intuitive Weather Application</h3><br>
 <h2>Overview</h2>h2><br>
 This project is a basic weather application that allows users to search for the current weather conditions in any city around the world. The application uses the OpenWeatherMap API to fetch the latest weather data and displays it in a clean and user-friendly interface.
 
