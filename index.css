@@ -78,4 +78,31 @@ body{
     margin-top: 50px;
 }
 
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
 
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
