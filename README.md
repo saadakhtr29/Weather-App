@@ -1,5 +1,6 @@
+# Weather-App
 <h3>A Simple and Intuitive Weather Application</h3><br>
-<h2>Overview</h2>h2><br>
+<h2>Overview</h2><br>
 This project is a basic weather application that allows users to search for the current weather conditions in any city around the world. The application uses the OpenWeatherMap API to fetch the latest weather data and displays it in a clean and user-friendly interface.
 
 <h2>Features</h2><br>
@@ -25,4 +26,4 @@ Contributions are welcome! If you find any bugs or have suggestions for new feat
 <h2>Acknowledgments</h2>
 OpenWeatherMap API for providing the weather data
 
-# Weather-App
+
