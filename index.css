@@ -95,8 +95,7 @@ body{
 }
 
 .weather{
-    display: none;
-
+    display: none;    
 }
 
 .error{
@@ -105,4 +104,43 @@ body{
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        margin: 50px auto 0px;
+        padding: 20px 15px;
+    }
+    .search input {
+        height: 40px;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+    .search button img {
+        width: 12px;
+    }
+    .weather-icon {
+        width: 120px;
+        margin-top: 20px;
+    }
+    .weather h1 {
+        font-size: 60px;
+    }
+    .weather h2 {
+        font-size: 30
+    }
+    .col{
+        align-items: center;
+    }
+    .col img{
+        padding-left: 8px;
+        margin-right: 5px;
+    }
+    .humidity, .wind{
+        font-size: 25px;
+    }
 }
