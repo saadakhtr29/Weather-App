@@ -3,7 +3,7 @@
 <h2>Overview</h2>
 This project is a basic weather application that allows users to search for the current weather conditions in any city around the world. The application uses the OpenWeatherMap API to fetch the latest weather data and displays it in a clean and user-friendly interface.
 <br>
-<h4>Checkout it out at</h4>https://weather-app-saad-akhtars-projects.vercel.app
+<p></p><h4>Checkout it out at</h4>https://weather-app-saad-akhtars-projects.vercel.app</p>
 <br>
 <h2>Features</h2>
 Search for weather conditions in any city<br>
