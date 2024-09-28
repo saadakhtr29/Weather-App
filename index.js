@@ -56,3 +56,13 @@ searchBtn.addEventListener('click', ()=>{
 
 
 checkWeather();
+
+let btn = document.getElementById("btn");
+const inputBox = document.getElementById("input-box");
+
+inputBox.addEventListener("keyup" , e => {
+    e.preventDefault();
+    if(e.key === "Enter") {
+        btn.click();
+    }
+})
