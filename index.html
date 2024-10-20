@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/weather-favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/images/weather-favicon.png" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/images/icon-192x192.png" />
     <title>Weather</title>
-    <link rel="stylesheet" href="/index.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="card">
-        <div class="search">
-            <input type="text" id="input-box" placeholder="enter city name" spellcheck="false" >
-            <button id="btn"><img src="/images/search.png"></button>
-        </div>
-        <div class="error">
-            <p>Invalid city name</p>
-        </div>
-        <div class="weather">
-            <img src="/images/rain.png" class="weather-icon">
-            <h1 class="temp">23°C</h1>
-            <h2 class="city">New York</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="/images/humidity.png">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Humidity</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <img src="/images/wind.png">
-                    <div>
-                        <p class="wind">15km/h</p>
-                        <p>Wind Speed</p>
-                    </div>
-                    
-                </div>
+      <div class="search">
+        <input
+          type="text"
+          id="input-box"
+          placeholder="enter city name"
+          spellcheck="false"
+        />
+        <button id="btn"><img src="/images/search.png" /></button>
+      </div>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather">
+        <img src="/images/rain.png" class="weather-icon" />
+        <h1 class="temp">23°C</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+          <div class="col">
+            <img src="/images/humidity.png" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
             </div>
+          </div>
+
+          <div class="col">
+            <img src="/images/wind.png" />
+            <div>
+              <p class="wind">15km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-<script src="/index.js"></script>
-
-</body>
+    <script src="/index.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registered successfully:",
+                registration
+              );
+            })
+            .catch((error) => {
+              console.log("Service Worker registration failed:", error);
+            });
+        });
+      }
+    </script>
+  </body>
 </html>
